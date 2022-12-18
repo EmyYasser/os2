@@ -41,12 +41,6 @@ import javafx.stage.Stage;
 public class MainApp extends Application {
     public static void main(String[] args) {
         launch(args);
-        
-         Thread t1=new Thread(new Reader());
-         Thread t2=new Thread(new Writer());
-         
-        t1.start();
-         t2.start();
     }
     
     @Override
