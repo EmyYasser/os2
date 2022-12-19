@@ -9,8 +9,8 @@ import java.util.concurrent.Semaphore;
  * @author DELL
  */
 public class Main {
-    private static Semaphore writer=new Semaphore(1);     
-    private static Semaphore reader=new Semaphore(1);
+    private static Semaphore writer=new Semaphore(1 ,true);     
+    private static Semaphore reader=new Semaphore(1 ,true);
     private static int counter=0;
     private static int readers=0;
     public static void main(String[] args){
